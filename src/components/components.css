@@ -1,0 +1,187 @@
+.refer {
+    color: #00B3AC;
+    font-size: 18px;
+    font-family: "Jacques Francois", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 25px;
+}
+
+.com-body {
+    display: flex;
+    flex-direction: row
+}
+
+.bg {
+   background-color: #00B3AC;
+   width: 200px;
+   height: 200px;
+   margin: 15px;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   cursor: pointer;
+}
+
+.bg img {
+    width: 100px;
+}
+
+.bg span {
+    font-size: 18px;
+    color: #D6EDFF;
+}
+
+.cpi {
+    height: 40px;
+    width: 235px;
+    outline: #00B3AC;
+    border: 2px solid #00B3AC;
+    border-radius: 10px;
+    background-color: white;
+    padding-left: 15px;
+    margin: 10px;
+}
+
+.cpi::placeholder {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(170, 170, 170, 0.9);
+}
+
+.contact-us .message,.feedback .message {
+    width: 235px;
+    height: 70px;
+    padding:10px 10px 10px 15px;
+    outline: none;
+    border: 2px solid #00B3AC;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.edit label {
+    font-size: 18px;
+    color: #00A09A;
+
+}
+
+.epi {
+    height: 38px;
+    width: 235px;
+    outline: #00B3AC;
+    border: 2px solid #00B3AC;
+    border-radius: 10px;
+    background-color: white;
+    padding-left: 15px;
+}
+
+.ai {
+    height: 70px;
+    width: 235px;
+    outline: #00B3AC;
+    border: 2px solid #00B3AC;
+    border-radius: 10px;
+    background-color: white;
+    padding-left: 15px;
+}
+
+.bttn {
+    height: 35px;
+    width: 100px;
+    color: #D6EDFF;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 7px;
+    border: none;
+    background-color: #00A09A;
+    cursor: pointer;
+}
+
+.bttn:hover {
+    background: #00B3AC;
+}
+
+.payment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    width: 300px;
+    background-color: #D6EDFF;
+    border: 2px solid #00A09A;
+    border-radius: 15px;
+}
+
+.exp {
+    height: 38px;
+    width: 120px;
+    outline: #00B3AC;
+    border: 2px solid #00B3AC;
+    border-radius: 10px;
+    background-color: white;
+    padding-left: 15px;
+    margin: 10px;
+}
+
+.cvv {
+    height: 38px;
+    width: 80px;
+    outline: #00B3AC;
+    border: 2px solid #00B3AC;
+    border-radius: 10px;
+    background-color: white;
+    padding-left: 15px;
+    margin: 10px;
+}
+
+.payment .inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 275px;
+}
+
+.pay {
+    height: 35px;
+    width: 255px;
+    color: #D6EDFF;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 7px;
+    border: none;
+    background-color: #00A09A;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.pay:hover {
+    background: #00B3AC;
+}
+
+.cancel {
+    height: 35px;
+    width: 255px;
+    color: #00A09A;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 7px;
+    border: 1px solid #00A09A;
+    background-color: #D6EDFF;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.confirmation {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirmation .artname {
+    margin: 25px;
+    font-size: 25px;
+}

@@ -1,0 +1,347 @@
+.auth-page {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.left {
+    background-color: #D6EDFF;
+    width: 50%;
+    height: calc(100vh - 0px);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.right {
+    background-color: #00B3AC;
+    width: 50%;
+    height: calc(100vh - 0px);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.login-form {
+    height: fit-content;
+    width: 50%;
+    align-self: center;
+    margin-top: 12%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 10px;
+    border: 3px solid #00B3AC;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, .2);
+}
+
+.register-form {
+    height: 60%;
+    width: 50%;
+    align-self: center;
+    margin-top: 12%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    border: 3px solid #00B3AC;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, .2);
+}
+
+.forget-form {
+    height: auto;
+    width: 50%;
+    align-self: center;
+    margin-top: 17%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 10px;
+    border: 3px solid #00B3AC;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, .2);
+}
+
+.auth-logo {
+    max-width: 700px;
+    height: 50px;
+}
+
+.auth-logo img {
+    /* transform: translate(-700%,-150%); */
+    margin: 10px 0 0 10px;
+}
+
+.auth-logo a {
+    /* transform: translate(-700%,-150%); */
+    font-size: 18px;
+    margin: 10px 0 0 10px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+    color: #00A09A;
+}
+
+.shift-login {
+    position: relative;
+    width: 60%;
+    height: 40px;
+    font-size: 0;
+    padding: 0 7px 0 7px;
+    margin-bottom: 20px;
+}
+
+.shift-login a {
+    font-size: 17px;
+    font-weight: 600;
+    color: #00A09A;
+    text-decoration: none;
+    line-height: 40px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
+}
+
+.shift-login .animation {
+    position: absolute;
+    height: 3px;
+    bottom: 0;
+    z-index: 0;
+    background: #00B3AC;
+    width: 50px;
+    border-radius: 10px;
+    transition: all .5s ease 0s;
+}
+
+a:nth-child(1) {
+    width: 50%;
+}
+.shift-login .start-customer,a:nth-child(1) {
+    width: 50%;
+    left: 0;
+}
+
+a:nth-child(2) {
+    width: 50%;
+}
+.shift-login .start-artist,a:nth-child(2) {
+    width: 50%;
+    right: 0;
+}
+
+.left .input {
+    height: 40px;
+    width: 60%;
+    outline: #00B3AC;
+    border: 2px solid #00B3AC;
+    border-radius: 10px;
+    background-color: white;
+    padding: 0px 0px 0px 15px;
+    margin: 0 30px 20px 30px;
+}
+
+.input::placeholder {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(170, 170, 170, 0.9);
+}
+
+.btn {
+    height: 35px;
+    width: 100px;
+    margin: 0px 50px;
+    margin-bottom: 25px;
+    color: #D6EDFF;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 7px;
+    border: none;
+    background-color: #00A09A;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #00B3AC;
+}
+
+.forget {
+    color: #00A09A;
+    cursor: pointer;
+    margin-right: 28%;
+}
+
+.new {
+    color: black;
+    align-self: center;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.register-form .label {
+    width: 60%;
+    height: 40px;
+    display: flex;
+    align-items: justify;
+    justify-content: space-between;
+    margin: 0 0 20px 20%;
+}
+
+a {
+    color: #00A09A;
+    cursor: pointer;
+}
+
+.right .welimg {
+    max-width: 50%;
+    max-height:342px;
+    border-radius: 15px;
+    align-self: center;
+    justify-self: center;
+    margin-top: 13%;
+}
+
+.right .welcome {
+    font-size: 28px;
+    font-family: 'Aclonica', cursive;
+    color: white;
+    align-self: center;
+}
+
+.right .quote {
+    font-family: "Brush Script MT", cursive;
+    text-align: center;
+    color: rgb(236, 236, 236);
+    font-size: 22px;
+    align-self: center;
+}
+
+.background {
+    height: 100vh;
+    background-color: #00B3AC;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.background .form {
+    width: 60%;
+    height: 70%;
+    background-color: #D6EDFF;
+    border-radius: 20px;
+    border: 2px solid white;
+    display: flex;
+    align-self: center;
+    margin-top: 4.5%;
+}
+
+.form-left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.form-left .input, .form-right .input {
+    height: 40px;
+    width: 70%;
+    outline: #00B3AC;
+    border: 2px solid #00B3AC;
+    border-radius: 10px;
+    background-color: white;
+    padding: 0px 0px 0px 15px;
+}
+
+.head {
+    margin-top: -10px;
+    font-size: 25px;
+    color: #00A09A;
+    font-weight: 600;
+}
+
+.area {
+    width: 70%;
+    height: 15%;
+    margin-bottom: 20px;
+    outline: #00B3AC;
+    border: 2px solid #00B3AC;
+    border-radius: 10px;
+    background-color: white;
+    padding: 5px 0px 0px 15px;
+}
+
+.form-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.form .label {
+    width: 70%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 20px;
+}
+
+.admin-page {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D6EDFF;
+}
+
+.form-bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.admin-form {
+    height: 300px;
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 10px;
+    border: 3px solid #00B3AC;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, .2);
+}
+
+.admin-form .input {
+    height: 40px;
+    width: 60%;
+    outline: #00B3AC;
+    border: 2px solid #00B3AC;
+    border-radius: 10px;
+    background-color: white;
+    padding: 0px 0px 0px 15px;
+    margin: 0 30px 20px 30px;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+}
+::-webkit-scrollbar-track {
+    background: #D6EDFF;
+    border-radius: 15px;
+}
+::-webkit-scrollbar-thumb {
+    background: #00A09A;
+    border-radius: 7px;
+}

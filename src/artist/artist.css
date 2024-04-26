@@ -1,0 +1,130 @@
+.main-publish {
+    height: calc(100vh - 91px);
+    width: 100%;
+}
+
+.header {
+    width: 94%;
+    height: 50px;
+    padding-top: 30px;
+    border-bottom: 4px solid #00B3AC;
+    margin-left: 3%;
+}
+
+.page-head {
+    color: #00B3AC;
+    font-weight: 700;
+    font-size: 28px;
+    font-family: "Days One";
+    margin-left: 50px;
+}
+
+.publish-form {
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.left-sub {
+    width: 30%;
+    height: calc(100vh - 220px);
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* input[type="file"] {
+    display: none;
+} */
+
+.art-css {
+    width: 200px;
+    min-height: 200px;
+    max-height: 200px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #D6EDFF;
+    border-radius: 20px;
+    border: 2px solid #00A09A;
+}
+
+.dimension {
+    align-content: center;
+}
+
+.dimension label {
+    color: #00A09A;
+    padding-left: 15px;
+}
+
+.dimension .field {
+    width: 185px;
+    height: 40px;
+    outline: none;
+    padding-left: 15px;
+    background-color: #D6EDFF;
+    border-radius: 10px;
+    border: 2px solid #00B3AC;
+}
+
+.right-sub {
+    width: 70%;
+    height: 100%;
+    padding-top: 20px;
+}
+
+.back {
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.field::placeholder,.field-area::placeholder {
+    font-weight: 600;
+    color: rgba(170, 170, 170);
+}
+
+.table-publish {
+    border: none;
+    margin-top: 50px;
+}
+
+.table-publish td {
+    min-width: 200px; ;
+}
+
+.table-publish label {
+    color: #00A09A;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.table-publish .field {
+    width: 385px;
+    height: 50px;
+    outline: none;
+    padding-left: 15px;
+    background-color: #D6EDFF;
+    border-radius: 10px;
+    border: 2px solid #00B3AC;
+} 
+
+.table-publish .field-area {
+    width: 370px;
+    height: 70px;
+    outline: none;
+    padding-left: 15px;
+    padding: 15px 15px;
+    background-color: #D6EDFF;
+    border-radius: 10px;
+    border: 2px solid #00B3AC;
+}

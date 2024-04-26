@@ -1,0 +1,356 @@
+body {
+    background-image: linear-gradient(to bottom, #E7EFF5, #8DFFFB);
+    background-size: auto;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: calc(100vh - 0px);
+  }
+
+section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 100px;
+    color: #ffffff;
+}
+
+.home {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-title {
+    font-size: 3em;
+    margin-bottom: 50px;
+    color: #00B3AC;
+    transform: translate(-80%, 200%);
+}
+
+.content {
+    position: relative;
+    width: 1150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .back-drop {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transform: translate(80%, -15%);
+}
+
+.content .image {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+    transform: translate(15px, -15px);
+}
+
+.content .image img {
+    z-index: 111;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.content .text {
+    z-index: 222;
+    padding: 40px;
+    font-size: 25px;
+    color: #00B3AC;
+    max-width: 400px;
+    border-radius: 10px;
+    transform: translate(-140%, -20%);
+}
+
+.about {
+    width: 90%;
+    font-size: 18px;
+    color: #00A09A;
+}
+
+.about p {
+    text-align: justify;
+    margin: 20px;
+}
+
+.explore {
+    display: flex;
+    flex-direction: row;
+}
+
+.search {
+    margin-top: 100px;
+    width: 250px;
+    display: flex;
+    padding: 20px;
+}
+
+.search-btn {
+    height: 37px;
+    width: 100px;
+    color: #D6EDFF;
+    font-size: 18px;
+    font-weight: 600;
+    border: 2px solid #00B3AC;
+    border-radius: 0px 10px 10px 0px;
+    border: none;
+    background-color: #00A09A;
+    cursor: pointer;
+}
+
+.search-bar {
+    height: 32px;
+    width: 180px;
+    padding-left: 10px;
+    border: 2px solid #00B3AC;
+    border-radius: 10px 0px 0px 10px;
+    outline: none;
+}
+
+.cs {
+    display: flex;
+    flex-direction: column;
+}
+
+.cata {
+    padding-left: 20px;
+    font-family: "Jacques Francois", serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.cata .head {
+    color: #00B3AC;
+    font-family: "Jacques Francois", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+}
+
+.cata .cats {
+    margin: 7px;
+    font-size: 20px;
+    font-family: "Jacques Francois", serif;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+}
+
+.display {
+    max-width: 75%;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.display a {
+    text-decoration: none;
+}
+
+.display .artwork {
+    width: auto;
+    height: 430px;
+    padding: 15px;
+    background-color: #e7eff52f;
+    backdrop-filter: blur(20px);
+    margin: 10px;
+    border: 2px solid #00B3AC;
+    border-radius: 10px;
+}
+
+.imgtag {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.artwork img {
+    border-radius: 10px;
+}
+
+.artwork .landscape {
+    width: 300px;
+    height: auto;
+}
+
+.artwork .portrait {
+    width: auto;
+    height: 300px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 62px);
+}
+
+.contact-form {
+    width: 350px;
+    height: 320px;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #00B3AC;
+    border-radius: 15px;
+}
+
+.contact-form .input {
+    width: 70%;
+    height: 40px;
+    padding:5px 5px 5px 10px;
+    outline: none;
+    border: 2px solid #00B3AC;
+    border-radius: 10px;
+}
+
+.contact-form .message {
+    width: 70%;
+    height: 70px;
+    padding:5px 5px 5px 10px;
+    outline: none;
+    border: 2px solid #00B3AC;
+    border-radius: 10px;
+}
+
+/* display artwork css */
+
+.displayartwork {
+    width: 100%;
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: row;
+}
+
+.displayartwork .left-part {
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.displayartwork .right-part {
+    width: 60%;
+    height: auto;
+}
+
+.left-part .details {
+    margin-top: 100px;
+}
+
+.left-part .details img {
+    width: 60%;
+    margin-bottom: 30px;
+}
+
+/* .left-part .details img:hover {
+    height: calc(100vh - 100px);
+    width: auto;
+} */
+
+.left-part .details .pricetag {
+    width: 55%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.left-part .back {
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.right-part .artname {
+    margin-top: 90px;
+    font-size: 30px;
+    font-weight: 700;
+    height: 60px;
+    width: 85%;
+    border-bottom: 4px solid #00B3AC;
+}
+
+.right-part .description {
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.right-part .dimension {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.right-part .artist {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.right-part .buttons {
+    margin-top: 50px;
+    font-size: 16px;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.right-part .buy {
+    height: 50px;
+    width: 170px;
+    color: #D6EDFF;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 7px;
+    border: none;
+    background-color: #00A09A;
+    cursor: pointer;
+}
+
+.right-part .buy:hover {
+    background: #00B3AC;
+}
+
+.right-part .fav {
+    height: 50px;
+    width: 170px;
+    color: #00A09A;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 7px;
+    border: 2px solid #00B3AC;
+    background-color: #D6EDFF;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-part .fav:hover {
+    color: #00B3AC;
+}

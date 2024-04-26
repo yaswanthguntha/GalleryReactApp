@@ -1,23 +1,60 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router } from "react-router-dom";
+import NavBar from "./navbar/NavBar";
+import './App.css'
+import { useState,useEffect } from "react";
+import AdminNavBar from "./admin/AdminNavBar";
+import ArtistNavBar from "./artist/ArtistNavBar";
+import CustomerNavBar from "./customer/CustomerNavBar";
 
-function App() {
+function App() 
+{
+  const [isAdminLoggedIn, setIsAdminLoggedIn] = useState(false);
+  const [isArtistLoggedIn, setIsArtistLoggedIn] = useState(false);
+  const [isCustomerLoggedIn, setIsCustomerLoggedIn] = useState(false);
+
+  useEffect(() => {
+    const adminLoggedIn = localStorage.getItem('isAdminLoggedIn') === 'true';
+    const artistLoggedIn = localStorage.getItem('isArtistLoggedIn') === 'true';
+    const customerLoggedIn = localStorage.getItem('isCustomerLoggedIn') === 'true';
+
+    setIsAdminLoggedIn(adminLoggedIn);
+    setIsArtistLoggedIn(artistLoggedIn);
+    setIsCustomerLoggedIn(customerLoggedIn);
+  }, [])
+
+  const onAdminLogin = () => {
+    localStorage.setItem('isAdminLoggedIn', 'true');
+    setIsAdminLoggedIn(true);
+  };
+
+  const onArtistLogin = () => {
+    localStorage.setItem('isArtistLoggedIn', 'true');
+    setIsArtistLoggedIn(true);
+  };
+
+  const onCustomerLogin = () => {
+    localStorage.setItem('isCustomerLoggedIn', 'true');
+    setIsCustomerLoggedIn(true);
+  };
+  
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <Router>
+        {isAdminLoggedIn ? (
+          <AdminNavBar/>
+        ) : isArtistLoggedIn ? (
+          <ArtistNavBar/>
+        ) : isCustomerLoggedIn ? (
+          <CustomerNavBar/>
+        ) : (
+          <NavBar onAdminLogin={onAdminLogin}
+                  onArtistLogin={onArtistLogin} 
+                  onCustomerLogin={onCustomerLogin} />
+        ) }
+      </Router>
+
     </div>
   );
 }
