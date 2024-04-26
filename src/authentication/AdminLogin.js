@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './auth.css'
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import config from './../config';
+import config from '../config';
 
 export default function AdminLogin({ onAdminLogin }) {
 

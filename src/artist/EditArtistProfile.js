@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import '../components/components.css'
 import axios from 'axios'
-import config from './../config';
+import config from '../config';
 
 export default function EditArtistProfile() {
 
